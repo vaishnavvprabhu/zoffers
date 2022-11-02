@@ -1,6 +1,12 @@
-import React, { useRef, useState } from "react";
-import { useEffect } from "react/cjs/react.development";
+import React, { useRef, useState, useEffect } from "react";
+// 
 import "./productShowcase.css";
+import logo from '../../images/logo_full_alt.png';
+import leftmost_image from '../../images/ProductShowcase/Cash.png';
+import leftkinda_image from '../../images/ProductShowcase/Discover.png';
+import center_image from '../../images/ProductShowcase/ZOTV.png';
+import rightkinda_image from '../../images/ProductShowcase/ZOLens.png';
+import rightmost_image from '../../images/ProductShowcase/ZOffers.png';
 
 const ProductShowcase = () => {
   const [showAnimation, setShowAnimation] = useState(false);
@@ -26,9 +32,9 @@ const ProductShowcase = () => {
       }
     }
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
-      }
+      // if (ref.current) {
+      //   observer.unobserve(ref.current);
+      // }
     };
   });
   return (
@@ -40,23 +46,23 @@ const ProductShowcase = () => {
       {showAnimation && (
         <div className="showcase-wrapper">
           <img
-            src="https://web-images.credcdn.in/_next/assets/images/home-page/phone/left-2.png"
+            src={leftmost_image}
             className="showcase-ui showcase-mockup-1"
           />
           <img
-            src="https://web-images.credcdn.in/_next/assets/images/home-page/phone/left-1.png"
+            src={leftkinda_image}
             className="showcase-ui showcase-mockup-2"
           />
           <img
-            src="https://web-images.credcdn.in/_next/assets/images/home-page/phone/center.png"
+            src={center_image}
             className="showcase-ui showcase-mockup-3"
           />
           <img
-            src="https://web-images.credcdn.in/_next/assets/images/home-page/phone/right-1.png"
+            src={rightkinda_image}
             className="showcase-ui showcase-mockup-4"
           />
           <img
-            src="https://web-images.credcdn.in/_next/assets/images/home-page/phone/right-2.png"
+            src={rightmost_image}
             className="showcase-ui showcase-mockup-5"
           />
         </div>

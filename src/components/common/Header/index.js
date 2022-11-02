@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./header.css";
+import Typewriter from "typewriter-effect";
+import logo from '../../../images/logo_full_alt.png';
 
 const Header = () => {
   const [showMobMenu, setShowMobMenu] = useState(false);
@@ -15,31 +17,23 @@ const Header = () => {
         className={`mobile-menu only-mobile ${showMobMenu ? "overlay" : ""}`}
       >
         <div className="mobile-navbar">
-          <div className="mobile-nav-item">credit score check</div>
-          <div className="mobile-nav-item">credit card bill payment</div>
+          {/* <div className="mobile-nav-item">credit score check</div> */}
+          <a href="#download">
+          <l>Download Now</l>
+          </a>
         </div>
       </div>
       <div className="max-width flex header">
         <img
-          src="https://web-images.credcdn.in/_next/assets/images/home-page/cred-logo.png"
+          src={logo}
           className="header-logo"
         />
-        <div className="only-mobile mobile-menu-button-wrapper">
-          <button
-            class={`hamburger hamburger--spin ${
-              showMobMenu ? "is-active" : ""
-            }`}
-            type="button"
-            onClick={toggleMobileMenu}
-          >
-            <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
-            </span>
-          </button>
-        </div>
+        
         <div className="non-mobile flex">
-          <div className="header-nav-item">credit score check</div>
-          <div className="header-nav-item">credit card bill payment</div>
+          {/* <div className="header-nav-item">credit score check</div> */}
+          <a href="#download">
+          <div className="header-nav-item">Download Now</div>
+          </a>
         </div>
       </div>
     </div>

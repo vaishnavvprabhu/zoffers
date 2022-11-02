@@ -2,5 +2,11 @@
   "diffEditor.wordWrap": "on",
   "editor.accessibilitySupport": "off",
   "editor.wordWrap": "on",
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  }
 }

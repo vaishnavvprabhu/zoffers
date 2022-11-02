@@ -32,6 +32,9 @@ const ScreenText = ({ screen, setCurrentImg, i }) => {
 
   return (
     <div className={`screen-text ${isVisible ? "text-visible" : ""}`} ref={ref}>
+      <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d={screen.svg} fill="#34A853"></path>
+</svg>
       <div className="screen-heading">{screen.heading}</div>
       <div className="mobile-mockup-wrapper only-mobile">
         <div className="mobile-mockup ">

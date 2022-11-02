@@ -1,12 +1,12 @@
 :root {
-  --bg-black: #0f0f0f;
-  --text: #f8f8f8;
+  --bg-black: #f8f8f8;
+  --text: #0f0f0f;
   --mobile-box-shadow: #b0b0b229 0px -5px 6px 0px inset,
     #0000003d 4px 6px 11px 1px inset;
   --mobile-bg: #272b2d;
-  --white-bg: #f8f8f8;
+  --white-bg: #49C48C;
   --bg-green: #027757;
-  --bg-gray: #272727;
+  --bg-gray: #c0c0c0;
   --link-blue: #7ea2ec;
   --bg-light-gray: #272b2d6e;
   --bg-red: #ee2f4c;

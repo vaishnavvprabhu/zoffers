@@ -1,8 +1,12 @@
 .hero-section-wrapper {
+  /* background-image: url(../../images/TOPBackground.png); */
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
 }
 .hero-section {
-  min-height: 100vh;
+
+  min-height: 80vh;
   text-align: center;
 }
 
@@ -38,6 +42,40 @@
   color: var(--link-blue);
 }
 
+.color-font {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#08614C),
+    color-stop(#15B487),
+    to(#00D392)
+  );
+background: -webkit-linear-gradient(left, #00d4a3, #0BD098, #00D392);
+background: -o-linear-gradient(left, #00d4a3, #0BD098, #00D392);
+background: linear-gradient(to right, #00d4a3, #0BD098, #00D392);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+@keyframes  blackWhite {  
+  0% { color: #49C48C; }
+  33.22% { color: #49C48C; }
+  33.33% { color: rgb(212, 21, 21); }
+  66.65% { color: rgb(212, 21, 21); }
+  66.66% { color: rgb(183, 196, 0); }
+  99.99% { color: rgb(183, 196, 0); }
+  100% { color: #49C48C; }
+}
+
+.blinkdiv {
+    height: 100px;
+    /* //comment this background-color: black; */
+    -webkit-animation-name: blackWhite;  
+    -webkit-animation-iteration-count: infinite;  
+    -webkit-animation-duration: 9.8s; 
+}  
+
 @media all and (max-width: 1279px) {
   .hero-heading {
     font-size: 82px;
@@ -62,6 +100,10 @@
     text-align: left;
     min-height: 70vh;
   }
+
+  .hero-section-wrapper{
+    background-image: none !important;
+  }
   .hero-heading {
     font-size: 55px;
     line-height: 47.5px;
@@ -81,4 +123,23 @@
     height: 6px;
     margin: 2px 0px 0px 3px;
   }
+  .fade-in {
+    transition: opacity 1s ease;
+}
+  .fade-out {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+
+.cd-words-wrapper {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+}
+
+.fw-600 {
+  font-weight: 600 !important;
+}
+
 }

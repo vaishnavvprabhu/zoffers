@@ -3,6 +3,11 @@
   max-width: 70%;
 }
 
+.max-width-custom {
+  margin: auto;
+  max-width: 90%;
+}
+
 .width-50 {
   width: 50%;
 }
@@ -22,7 +27,7 @@
 .photo-section {
   height: 100%;
   min-height: 100vh;
-  min-width: 100vw;
+  min-width: 90vw;
   background-size: cover;
 }
 
@@ -30,8 +35,20 @@
   padding: 240px 0px 180px;
 }
 
+.photo-section-child-top {
+  padding: 140px 0px 50px;
+}
+
+.photo-section-child-bottom {
+  padding: 40px 0px 180px;
+}
+
+.photo-section-child-middle {
+  padding: 40px 0px 50px;
+}
+
 .photo-section-heading {
-  font-size: 100px;
+  font-size: 80px;
   line-height: 96px;
   font-weight: 700;
   max-width: 700px;
@@ -45,13 +62,21 @@
   margin-top: 16px;
 }
 
+.pay-heading-style {
+  font-size: 42px;
+  line-height: 46px;
+  font-weight: 700;
+  max-width: 630px;
+  margin-top: 16px;
+}
+
 .photo-section-description {
   font-size: 18px;
   font-weight: 600;
   line-height: 28px;
   max-width: 630px;
   margin-bottom: 40px;
-  margin-top: 200px;
+  margin-top: 10px;
 }
 
 .footer {
@@ -69,6 +94,10 @@
   }
 
   .photo-section-child {
+    padding: 100px 0px;
+  }
+
+  .photo-section-child-custom {
     padding: 100px 0px;
   }
   .footer {
@@ -98,10 +127,14 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    margin-top: 500px;
+    margin-top: 40px;
   }
 
   .photo-section-child {
+    padding: 195px 0px 90px;
+  }
+
+    .photo-section-child {
     padding: 195px 0px 90px;
   }
 
@@ -114,4 +147,89 @@
   .only-mobile {
     display: none !important;
   }
+
+
+}
+
+@media only screen and (max-width: 1202px){
+  .pay-heading-style {
+    font-size: 32px;
+    line-height: 46px;
+    font-weight: 700;
+    max-width: 430px;
+    margin-top: 16px;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .pay-heading-style {
+    font-size: 22px;
+    line-height: 46px;
+    font-weight: 700;
+    max-width: 430px;
+    margin-top: 16px;
+  }
+}
+
+/* Additional Bootstrap code (From Bootstrap Studio) cuz we need a hanging image */
+
+.fit-cover {
+  object-fit: cover
+}
+
+.bs-icon {
+  --bs-icon-size: .75rem;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--bs-icon-size);
+  width: calc(var(--bs-icon-size) * 2);
+  height: calc(var(--bs-icon-size) * 2);
+  color: var(--bs-primary)
+}
+
+.bs-icon-xs {
+  --bs-icon-size: 1rem;
+  width: calc(var(--bs-icon-size) * 1.5);
+  height: calc(var(--bs-icon-size) * 1.5)
+}
+
+.bs-icon-sm {
+  --bs-icon-size: 1rem
+}
+
+.bs-icon-md {
+  --bs-icon-size: 1.5rem
+}
+
+.bs-icon-lg {
+  --bs-icon-size: 2rem
+}
+
+.bs-icon-xl {
+  --bs-icon-size: 2.5rem
+}
+
+.bs-icon.bs-icon-primary {
+  color: var(--bs-white);
+  background: var(--bs-primary)
+}
+
+.bs-icon.bs-icon-primary-light {
+  color: var(--bs-primary);
+  background: rgba(var(--bs-primary-rgb), .2)
+}
+
+.bs-icon.bs-icon-semi-white {
+  color: var(--bs-primary);
+  background: rgba(255, 255, 255, .5)
+}
+
+.bs-icon.bs-icon-rounded {
+  border-radius: .5rem
+}
+
+.bs-icon.bs-icon-circle {
+  border-radius: 50%
 }

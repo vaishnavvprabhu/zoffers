@@ -11,6 +11,9 @@ import HeroSection from "../components/HeroSection";
 import MobileScroll from "../components/MobileScroll";
 import ProductShowcase from "../components/ProductShowcase";
 import WindowPeak from "../components/WindowPeak";
+import CredPay from "../components/CredPay";
+import Features from "../components/Features";
+// import PostShowcase from "../components/PostShowcase";
 
 const HomePage = () => {
   return (
@@ -18,16 +21,22 @@ const HomePage = () => {
       <Header />
       <HeroSection />
       <ProductShowcase />
-      <FeelSpecial />
-      <BrandsLove />
-      <CredExperience />
-      <MobileScroll />
+      {/* <FeelSpecial /> */}
+      <CredPay/>
+      {/* <BrandsLove />
+      <CredExperience /> */}
+
+      <Features/>      
+      {/* <MobileScroll />
       <div className="non-mobile">
-        <WindowPeak />
-      </div>
-      <CredSecurity />
-      <CredStory />
+        
+      </div> */}
+      <WindowPeak />
+      {/* <CredSecurity />
+      <CredStory /> */}
       <AppRating />
+      {/* <PostShowcase /> */}
+
       <Footer />
     </>
   );
